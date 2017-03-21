@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.nissen.courtcounter.MainActivity">
+
+    <ImageView
+        android:src="@drawable/ballcourt"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:id="@+id/TeamALayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/teamA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Team A"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/teamAScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:textSize="48sp"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/a3Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="a3Point"
+            android:layout_margin="4dp"
+            android:text="@string/point3"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/a2Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:onClick="a2Point"
+            android:text="@string/point2"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/a1Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:onClick="a1Point"
+            android:text="@string/point1"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/TeamBLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/teamB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Team B"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/teamBScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:textSize="48sp"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/b3Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:onClick="b3Point"
+            android:text="@string/point3"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/b2Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:onClick="b2Point"
+            android:text="@string/point2"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/b1Point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:onClick="b1Point"
+            android:text="@string/point1"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/orderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:onClick="resetScore"
+        android:text="@string/Reset"
+        android:textSize="16sp" />
+
+</RelativeLayout>
