@@ -71,11 +71,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void displayA(int number) {
         TextView quantityTextView = (TextView) findViewById(R.id.teamAScore);
-        quantityTextView.setText("" + number);
+        quantityTextView.setText(String.valueOf(number));
     }
     private void displayB(int number) {
         TextView quantityTextView = (TextView) findViewById(R.id.teamBScore);
-        quantityTextView.setText("" + number);
+        quantityTextView.setText(String.valueOf(number));
     }
 
 }
